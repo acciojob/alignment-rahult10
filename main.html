@@ -1,16 +1,151 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment 3</title>
+    <style>
+        /* Center alignment for heading */
+        h1 {
+            text-align: center;
+        }
 
+        /* Table styling */
+        table {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 1px;
+        }
+
+        /* Center and right align */
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        /* Background colors for green and blue rows */
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        /* Class for middle-aligned tables */
+        .middle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <h1>HTML Assignment #3</h1>
+
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">Cell 1</td>
+            <td id="t12" class="center">Cell 2</td>
+            <td id="t13" class="right">Cell 3</td>
+        </tr>
+        <tr class="center">
+            <td>Cell 4</td>
+            <td class="center">Cell 5</td>
+            <td class="right">Cell 6</td>
+        </tr>
+        <tr>
+            <td>Cell 7</td>
+            <td class="center">Cell 8</td>
+            <td class="right">Cell 9</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6">First Row - Single Cell (Colspan 6)</td>
+        </tr>
+        <tr>
+            <td>Cell 2.1</td>
+            <td>Cell 2.2</td>
+            <td>Cell 2.3</td>
+            <td>Cell 2.4</td>
+            <td>Cell 2.5</td>
+            <td>Cell 2.6</td>
+        </tr>
+        <tr>
+            <td>Cell 3.1</td>
+            <td>Cell 3.2</td>
+            <td>Cell 3.3</td>
+            <td>Cell 3.4</td>
+            <td>Cell 3.5</td>
+            <td>Cell 3.6</td>
+        </tr>
+        <tr>
+            <td>Cell 4.1</td>
+            <td>Cell 4.2</td>
+            <td>Cell 4.3</td>
+            <td>Cell 4.4</td>
+            <td>Cell 4.5</td>
+            <td>Cell 4.6</td>
+        </tr>
+        <tr>
+            <td>Cell 5.1</td>
+            <td>Cell 5.2</td>
+            <td>Cell 5.3</td>
+            <td>Cell 5.4</td>
+            <td>Cell 5.5</td>
+            <td>Cell 5.6</td>
+        </tr>
+        <tr>
+            <td>Cell 6.1</td>
+            <td>Cell 6.2</td>
+            <td>Cell 6.3</td>
+            <td>Cell 6.4</td>
+            <td>Cell 6.5</td>
+            <td>Cell 6.6</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td>Green 1</td>
+            <td>Green 2</td>
+            <td>Green 3</td>
+            <td>Green 4</td>
+            <td>Green 5</td>
+            <td>Green 6</td>
+        </tr>
+        <tr>
+            <td>Cell 2.1</td>
+            <td>Cell 2.2</td>
+            <td>Cell 2.3</td>
+            <td id="t-image" colspan="3">
+                <img src="your-image-url.jpg" alt="Image Description" width="100" height="100">
+            </td>
+        </tr>
+        <tr class="blue">
+            <td>Blue 1</td>
+            <td>Blue 2</td>
+            <td>Blue 3</td>
+            <td>Blue 4</td>
+            <td>Blue 5</td>
+            <td>Blue 6</td>
+        </tr>
+    </table>
 
 </body>
-
 </html>
